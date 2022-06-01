@@ -1,26 +1,12 @@
+
 const parrafoImagen1 = document.getElementById("pimg1"),
       parrafoImagen2 = document.getElementById("pimg2"),
       parrafoImagen3 = document.getElementById("pimg3"),
       parrafoImagen4 = document.getElementById("pimg4"),
       parrafoImagen5 = document.getElementById("pimg5");
 
-const aImg1 = document.getElementById("aimg1"),
-      aImg2 = document.getElementById("aimg2"),
-      aImg4 = document.getElementById("aimg4"),
-      aImg3 = document.getElementById("aimg3"),
-      aImg5 = document.getElementById("aimg5");
-/*
-const btnOkImg1 = document.getElementById("btn-okimg1"),
-      btnOkImg3 = document.getElementById("btn-okimg3"),
-      btnOkImg5 = document.getElementById("btn-okimg5");*/
-
-let objWindowOpen;
-const configVentana = "menubar=no,location=no,resizable=yes,scrollbars=no,status=no,width=800,height=400";
-
-function abrirPopup(nombreImagen, img) {
-    objWindowOpen = window.open(encodeURI(`http://127.0.0.1:5500/${nombreImagen}`), img, configVentana);
-}
-
+const aImg2 = document.getElementById("aimg2"),
+      aImg4 = document.getElementById("aimg4");
 
 
 if(localStorage.getItem("contadorImg1") === null) localStorage.setItem("contadorImg1", 0);
@@ -50,7 +36,19 @@ export default function contadorVisitas(visualizacionImg1, visualizacionImg2, vi
     });
     parrafoImagen4.innerHTML = visualizacionImg4;
 
-   
+    setInterval(() => {
+        parrafoImagen1.innerHTML = localStorage.getItem("contadorImg1", "value")
+    }, 1000);
+
+    setInterval(() => {
+        parrafoImagen3.innerHTML = localStorage.getItem("contadorImg3", "value")
+    }, 1000);
+
+    setInterval(() => {
+        parrafoImagen5.innerHTML = localStorage.getItem("contadorImg5", "value")
+    }, 1000);
+
+   /*
     aImg1.addEventListener("click", () => {
         abrirPopup("imagen1html.html", "Imagen1");
       });
@@ -68,7 +66,7 @@ export default function contadorVisitas(visualizacionImg1, visualizacionImg2, vi
     parrafoImagen5.innerHTML = visualizacionImg5;
 
 
-    /*
+    
     btnOkImg1.addEventListener("click", () => {
         visualizacionImg1++;
         localStorage.setItem("contadorImg1", visualizacionImg1);
