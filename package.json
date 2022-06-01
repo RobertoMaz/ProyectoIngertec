@@ -1,0 +1,19 @@
+{
+  "name": "ingertec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertoMaz/Proyecto-Ingertec.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertoMaz/Proyecto-Ingertec/issues"
+  },
+  "homepage": "https://github.com/RobertoMaz/Proyecto-Ingertec#readme"
+}
