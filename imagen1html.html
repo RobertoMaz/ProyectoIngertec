@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="es" class="fullscreen-parent">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet"  type="text/css" href="css/style.css">
-</head>
-<body class="fullscreen-parent">
-
-          <div class="container-lg p-0 m-0 position-relative">
-            <div class="fullscreen">
-              <img src="assets/mod1.jpg" alt="" class="img-fluid ">
-              <div class="gap-2 controls" id="div-btn" >
-                  <button class="btn btn-success position-absolute top-20 " type="button" id="btn-okimg1">OK</button>
-                  <button class="btn btn-success" type="button" id="btn-cerrar" onclick=window.close()>CERRAR</button>
-                </div>
-              </div>
-      </div>
-    
-      
-      <script src="js/popupImg1.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container p-0 m-0">
+            <!-- Imagen 1 del popup con window.open-->
+            <img src="assets/imagen1.jpg" alt="imagen1" class="fullscreen">
+            <div class="position-absolute bottom-0" id="div-btn" >
+                <!-- Botones del ok y cerrar del popup-->
+                <button class="btn btn-success" type="button" id="btn-okimg1">OK</button>
+                <button class="btn btn-success" type="button" id="btn-cerrar" onclick=window.close()>CERRAR</button>
+            </div>
+        </div>
+        <script src="js/popupImg1.js"></script>
+    </body>
 </html>
